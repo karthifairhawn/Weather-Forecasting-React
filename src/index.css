@@ -1,13 +1,212 @@
 body {
-  margin: 0;
+  margin: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
+    background-color: #f3f6fa;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.MuiPaper-root{
+  height:70vh;
+  width:1200px;
+  padding: 50px;
+  display:flex;  
+}
+
+.left-pane{
+  /* width:2000px; */
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: 1px solid rgba(0, 0, 0, 0.357);
+  padding-right:30px;
+}
+
+.search-box{
+  display:flex;
+  flex-direction: column;
+  height:50px;
+  align-items:center;
+  justify-content: space-around;  
+  margin: 30px 10px;
+}
+
+.information{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graph{
+  height:250px;
+  width:100%;
+  background-color:blue;
+}
+
+.right-pane{
+  padding:20px;
+  width:70%;
+}
+
+input{
+  padding:7px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  width: 100%;
+  height:30px !important;
+}
+
+.image{
+  width:200px;
+  height:200px;
+  background-image: url("https://s10.gifyu.com/images/output-onlinegiftools4d7ef63eca8fafd0.gif");
+  object-fit: cover;
+  background-size: auto;
+  border-radius: 40px;
+}
+
+.Clear-day{
+  background-image: url("http://openweathermap.org/img/wn/01d@2x.png");
+  background-size: cover;
+} 
+
+.Clear-night{  
+  background-image: url("http://openweathermap.org/img/wn/01n@2x.png");
+  background-size: cover;
+}
+
+.Clouds-day{
+  background-image: url("http://openweathermap.org/img/wn/02d@2x.png");
+  background-size: cover;
+}
+
+.Clouds-night{
+  background-image: url("http://openweathermap.org/img/wn/02n@2x.png");
+  background-size: cover;
+}
+
+
+.Thunderstorm-day{
+  background-image: url("http://openweathermap.org/img/wn/11d@2x.png");
+  background-size: cover;
+} 
+
+.Thunderstorm-night{
+  background-image: url("http://openweathermap.org/img/wn/11n@2x.png");
+  background-size: cover;
+} 
+
+.Drizzle-day{
+  background-image: url("http://openweathermap.org/img/wn/09d@2x.png");
+  background-size: cover;
+} 
+
+.Drizzle-night{
+  background-image: url("http://openweathermap.org/img/wn/09n@2x.png");
+  background-size: cover;
+} 
+
+.Rain-day{
+  background-image: url("http://openweathermap.org/img/wn/10d@2x.png");
+  background-size: cover;
+} 
+
+.Rain-night{
+  background-image: url("http://openweathermap.org/img/wn/09d@2x.png");
+  background-size: cover;
+} 
+
+
+.Snow-day{
+  background-image: url("http://openweathermap.org/img/wn/13d@2x.png");
+  background-size: cover;
+} 
+
+.Snow-night{
+  background-image: url("http://openweathermap.org/img/wn/13d@2x.png");
+  background-size: cover;
+} 
+
+
+.Mist-day,.Haze-day
+  {
+    background-image: url("http://openweathermap.org/img/wn/50d@2x.png");
+    background-size: cover;
+} 
+
+.Mist-night,.Haze-night
+  {
+    background-image: url("http://openweathermap.org/img/wn/50d@2x.png");
+    background-size: cover;
+} 
+
+
+
+/* .card-image{
+  width:150px;
+  height:150px;
+  border: 1px solid black;
+  background-image: url("https://s10.gifyu.com/images/output-onlinegiftools4d7ef63eca8fafd0.gif");
+  object-fit: cover;
+  background-size: auto;
+
+  border-radius: 40px;
+  background-position: 450px 390px;  
+  background-size: 1000px 100px;
+
+} */
+.humitity-wind{
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+}
+
+.humitity,.wind{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  font-size:20px;
+}
+
+
+.climate-cards{
+  display:flex;
+  justify-content: space-around;
+  width:100%;
+  
+}
+.climate-card{
+  width:20%;
+  height:170px;  
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  color:#fff !important;
+  font-size:22px;
+  flex-direction: column;
+  margin:0 10px;
+  color:#000 !important;
+}
+
+.blue{
+  background-color:#5596f6 !important;
+  color:#fff !important;
+}
+
+.card-title{
+  font-size:25px;
+}
+
+.card-sub{
+  opacity: 0.8;
 }
