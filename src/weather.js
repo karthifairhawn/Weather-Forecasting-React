@@ -995,7 +995,7 @@ const Weather = () => {
 
     let obj = {};
     useEffect(()=>{      
-        let url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=ec8ed7b018f29d0b43ae22a6decda539";                  
+        let url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=ec8ed7b018f29d0b43ae22a6decda539";                  
         fetch(url)
         .then(response => {      
             if(response.status === 404){
